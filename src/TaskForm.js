@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 
 export const TaskForm = ({onAdd}) => {
   const [taskName,setTaskName]= useState('');
+  
   function handleSubmit(ev){
-      ev.preventDefault()
+      ev.preventDefault();
+      onAdd(taskName);
+      setTaskName('');
   }
   return (
     <div>

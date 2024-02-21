@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from 'react'
-import Task from "./Task";
-function Checkbox({ defaultChecked = false }) {
-    const[checked,setChecked]=useState(defaultChecked);
+
+function Checkbox({ checked  }) {
+
   return (
     
     <div>
